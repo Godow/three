@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: deploy web to gh-pages
+name: deploy three to gh-pages
 
 # Controls when the workflow will run
 on:
@@ -35,8 +35,8 @@ jobs:
       - name: Deploy 🚀
         uses: crazy-max/ghaction-github-pages@v3.0.0
         with:
-          build_dir: ./web/dist
+          build_dir: ./dist
           target_branch: gh-pages
-          fqdn: compile.goduck.cc
+          fqdn: three.goduck.cc
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
